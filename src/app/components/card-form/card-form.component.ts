@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent {
- @Input () title: string = '';
+ @Input () title?: string;
 }

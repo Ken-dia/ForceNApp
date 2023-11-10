@@ -3,12 +3,10 @@
   <div class="flex justify-center">
     <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full">
       <div class="p-6">
-        <div class="flex justify-center">
+        <div class="flex justify-center" *ngIf="title">
           <div class="max-w-lg text-2xl font-semibold leading-relaxed text-gray-700 dark:text-white mb-3">{{ title }}</div>
         </div>
-        <!-- <div class="mt-6 sm:mx-auto sm:w-full lg:w-full"> -->
           <ng-content></ng-content>
-        <!-- </div> -->
       </div>
     </div>
   </div>
