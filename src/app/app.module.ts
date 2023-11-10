@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AbdoulayeComponent } from './pages/abdoulaye/abdoulaye.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { CardFormComponent } from './components/card-form/card-form.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { RegisterComponent } from './pages/register/register.component';
     LoginComponent,
     AbdoulayeComponent,
     RegisterComponent,
+    CardFormComponent,
+    NotFoundComponent,
 
   ],
   imports: [

@@ -1,74 +1,162 @@
-<div class="container-block ">
-  <div class="border-gray-400 lg:border-l-0  lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r card-register">
-      <div class="flex justify-center">
-        <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full">
-          <div class="p-6">
-            <div class="flex justify-center">
-              <div class="max-w-lg text-2xl font-semibold leading-relaxed text-gray-700 dark:text-white mb-3">Créer un compte</div>
-            </div>
-            <div class="mt-6 sm:mx-auto sm:w-full lg:w-full">
-              <form class="space-y-6" action="#" method="POST">
-                <label for="profil" class="block text-sm font-medium leading-6 text-gray-500">Mon profil</label>
-                <div class="relative">
-                  <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
-                    <svg class="w-5 h-5 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 10c1.5 1.5 5.25 3 9 3s7.5-1.5 9-3m-9-1h.01M2 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1ZM14 5V3a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2h8Z"/>
-                    </svg>
-                  </div>
-                  <select id="profil" class="bg-white border border-gray-300 text-black-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 invalid:text-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-10" placeholder="Sélectionner" value="">
-                    <option value="" disabled selected class="text-gray-400"> Je suis ...</option>
-                    <option value="homme">Homme</option>
-                    <option value="femme">Femme</option>
-                  </select>
-                </div>
-                <label for="prenom" class="block text-sm font-medium leading-6 text-gray-500">Prénom</label>
-                <div class="relative">
-
-                  <input type="text" id="prenom" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6" placeholder="Votre prénom">
-                </div>
-                <label for="nom" class="block text-sm font-medium leading-6 text-gray-500">Nom de famille</label>
-                <div class="relative">
-
-                  <input type="text" id="nom" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6" placeholder="Votre nom">
-                </div>
-                <label for="email" class="block text-sm font-medium leading-6 text-gray-500">Adresse e-mail</label>
-                <div class="relative">
-
-                  <input type="text" id="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6" placeholder="Votre e-mail">
-                </div>
-                <label for="sexe" class="block text-sm font-medium leading-6 text-gray-500">Sexe</label>
-                <div class="relative">
-                  <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
-                    <svg class="w-4 h-4 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 18">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"/>
-                    </svg>
-                  </div>
-                  <select id="sexe" class="bg-white border border-gray-300 text-black-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-10" placeholder="Sélectionner" value="">
-                    <option value="" disabled selected class="text-gray-400">  Sélectionner </option>
-                    <option value="homme">Homme</option>
-                    <option value="femme">Femme</option>
-                  </select>
-                </div>
-                <label for="phone" class="block text-sm font-medium leading-6 text-gray-500">Numéro de téléphone</label>
-                <div class="relative">
-
-                  <input type="text" id="phone" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6" placeholder="77 888 99 99">
-                </div>
-
-
-                <div>
-                  <div class="flex items-start mb-6">
-                    <div class="flex items-center h-5">
-                      <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-900 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-900 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
-                    </div>
-                    <label for="terms" class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-300">J'accepte les conditions d'utilisation du Service</label>
-                  </div>
-                  <button type="submit" class="flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 btn-login">Créer mon compte</button>
-                </div>
-              </form>
-            </div>
+<div class="container-block">
+  <app-card-form [title]="titleCard">
+    <div class="sm:mx-auto sm:w-full lg:w-full">
+      <form class="space-y-6" action="#" method="POST">
+        <label
+          for="profil"
+          class="block text-sm font-medium leading-6 text-gray-500"
+          >Mon profil</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+          >
+            <svg
+              class="w-5 h-5 text-gray-400 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M1 10c1.5 1.5 5.25 3 9 3s7.5-1.5 9-3m-9-1h.01M2 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1ZM14 5V3a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2h8Z"
+              />
+            </svg>
           </div>
-
+          <select
+            id="profil"
+            class="bg-white border border-gray-300 text-black-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 invalid:text-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-10"
+            placeholder="Sélectionner"
+            value=""
+          >
+            <option value="" disabled selected class="text-gray-400">
+              Je suis ...
+            </option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+          </select>
         </div>
-      </div>
+        <label
+          for="prenom"
+          class="block text-sm font-medium leading-6 text-gray-500"
+          >Prénom</label
+        >
+        <div class="relative">
+          <input
+            type="text"
+            id="prenom"
+            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6"
+            placeholder="Votre prénom"
+          />
+        </div>
+        <label
+          for="nom"
+          class="block text-sm font-medium leading-6 text-gray-500"
+          >Nom de famille</label
+        >
+        <div class="relative">
+          <input
+            type="text"
+            id="nom"
+            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6"
+            placeholder="Votre nom"
+          />
+        </div>
+        <label
+          for="email"
+          class="block text-sm font-medium leading-6 text-gray-500"
+          >Adresse e-mail</label
+        >
+        <div class="relative">
+          <input
+            type="text"
+            id="email"
+            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6"
+            placeholder="Votre e-mail"
+          />
+        </div>
+        <label
+          for="sexe"
+          class="block text-sm font-medium leading-6 text-gray-500"
+          >Sexe</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-400 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"
+              />
+            </svg>
+          </div>
+          <select
+            id="sexe"
+            class="bg-white border border-gray-300 text-black-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-10"
+            placeholder="Sélectionner"
+            value=""
+          >
+            <option value="" disabled selected class="text-gray-400">
+              Sélectionner
+            </option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+          </select>
+        </div>
+        <label
+          for="phone"
+          class="block text-sm font-medium leading-6 text-gray-500"
+          >Numéro de téléphone</label
+        >
+        <div class="relative">
+          <input
+            type="text"
+            id="phone"
+            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-800 sm:text-sm sm:leading-6"
+            placeholder="77 888 99 99"
+          />
+        </div>
+
+        <div>
+          <div class="flex items-start mb-6">
+            <div class="flex items-center h-5">
+              <input
+                id="terms"
+                type="checkbox"
+                value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-900 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-900 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required
+              />
+            </div>
+            <label
+              for="terms"
+              class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-300"
+              >J'accepte les conditions d'utilisation du Service</label
+            >
+          </div>
+          <button
+            type="submit"
+            class="flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 btn-login"
+          >
+            Créer mon compte
+          </button>
+        </div>
+      </form>
+    </div>
+  </app-card-form>
 </div>
