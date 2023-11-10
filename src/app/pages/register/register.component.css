@@ -1,0 +1,29 @@
+.container-block {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+}
+.relative {
+  margin-top: 5px !important;
+}
+
+.card-register {
+  width: 450px;
+}
+input {
+  height: 45px;
+  border-radius: 8;
+  border: 0.09em solid #667085;
+  padding-left: 12px ;
+}
+select {
+  border: 0.09em solid #667085;
+}
+@media only screen and (max-width: 400px) {
+  .container-block {
+    height: 100%;
+  }
+}
+

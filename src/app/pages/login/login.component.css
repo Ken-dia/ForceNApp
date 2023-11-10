@@ -3,19 +3,17 @@
   min-height: 100vh;
   background-color: rgb(246, 249, 253);
 }
-input {
-  height: 40px;
-  border-radius: 8;
-  border: 0.09em solid #667085;
-  padding-left: 12px ;
-}
+
 .logo-icon {
   width: 140px; height: 110px;
   background-repeat: no-repeat;
 }
 
-.btn-login {
-  background-color: #1d71b8;
+input {
+  height: 45px;
+  border-radius: 8;
+  border: 0.09em solid #667085;
+  padding-left: 12px ;
 }
 
 .modal-connexion-socialicon {
