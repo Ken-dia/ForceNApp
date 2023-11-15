@@ -1,17 +1,11 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-abdoulaye',
-  templateUrl: './abdoulaye.component.html',
-  styleUrls: ['./abdoulaye.component.css']
+  selector: 'app-mamadou',
+  templateUrl: './mamadou.component.html',
+  styleUrls: ['./mamadou.component.css']
 })
-export class AbdoulayeComponent {
-  constructor(private sanitizer: DomSanitizer) {}
-
-  sanitizeHtml(html: string): SafeHtml {
-    return this.sanitizer.bypassSecurityTrustHtml(html);
-  }
+export class MamadouComponent {
   accesRapides: any = [
     {
       title: 'Appels à candidatures',
@@ -67,5 +61,4 @@ export class AbdoulayeComponent {
       description: 'Obtenez une certification professionnelles en dessin digital et intégrer les plus grands studios du monde.'
     }
   ]
-
 }

@@ -8,6 +8,7 @@ import { AbdoulayeComponent } from './pages/abdoulaye/abdoulaye.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CardFormComponent } from './components/card-form/card-form.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { MamadouComponent } from './pages/mamadou/mamadou.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     RegisterComponent,
     CardFormComponent,
     NotFoundComponent,
+    MamadouComponent,
 
   ],
   imports: [
