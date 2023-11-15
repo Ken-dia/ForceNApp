@@ -1,46 +1,46 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-mamadou',
-  templateUrl: './mamadou.component.html',
-  styleUrls: ['./mamadou.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class MamadouComponent {
+export class HomeComponent {
   accesRapides: any = [
     {
       title: 'Appels à candidatures',
       subtitle: 'Voir les offres disponibles',
-      link: 'rappeles',
+      link: '/abdoulaye/appels',
       icon: `book-open-01.png`
     },
     {
       title: 'Mes candidatures',
       subtitle: 'Voir l\'etat de vos dossiers',
-      link: 'candidatures',
+      link: '/abdoulaye/appels',
       icon: `send.png`
     },
     {
       title: 'Mon Profil',
       subtitle: 'Compléter votre profil',
-      link: 'profil',
+      link: '/abdoulaye/agenda',
       icon: 'user-01.png'
     },
     {
       title: 'Plateforme E-learning',
       subtitle: 'Accéder à la plateforme',
-      link: 'e-learning',
+      link: '/abdoulaye/e-learning',
       icon:'graduation-hat-01.png'
     },
     {
       title: 'E-bibliothéque',
       subtitle: 'Accéder à la plateforme',
-      link: 'e-biblitheque',
+      link: '/abdoulaye/bibliotheque',
       icon: 'book-open-01.png'
     },
     {
       title: 'Mon Agenda',
       subtitle: 'Le sous titre ici',
-      link: 'agenda',
+      link: '/abdoulaye/agenda',
       icon: 'calendar-check-01.png'
     }
   ];

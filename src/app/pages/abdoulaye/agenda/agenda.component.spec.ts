@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MamadouComponent } from './mamadou.component';
+import { AgendaComponent } from './agenda.component';
 
-describe('MamadouComponent', () => {
-  let component: MamadouComponent;
-  let fixture: ComponentFixture<MamadouComponent>;
+describe('AgendaComponent', () => {
+  let component: AgendaComponent;
+  let fixture: ComponentFixture<AgendaComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MamadouComponent]
+      declarations: [AgendaComponent]
     });
-    fixture = TestBed.createComponent(MamadouComponent);
+    fixture = TestBed.createComponent(AgendaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

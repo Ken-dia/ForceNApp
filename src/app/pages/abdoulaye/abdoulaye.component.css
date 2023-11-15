@@ -4,11 +4,13 @@
 }
 .main-content {
   background-color: #f4f4f4 !important;
-}
-.icons {
-  margin-right: 40px;
+  min-height: 100vh;
 }
 
 .active-link {
   background-color: #d1e2f1;
+  color: #29587e;
+}
+.active-link svg {
+  color: #29587e;
 }
