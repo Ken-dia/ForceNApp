@@ -15,6 +15,10 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
+    path: 'abdoulaye',
+    loadChildren: () => import('./pages/abdoulaye/abdoulaye.module').then((module) =>  module.AbdoulayeModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
 
