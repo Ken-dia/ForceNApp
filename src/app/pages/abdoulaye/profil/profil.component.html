@@ -1,1 +1,30 @@
-<p>profil works!</p>
+
+<div class="bg-white shadow-sm-light">
+  <div class="text-4xl font-normal text-gray-900 dark:text-white p-6">Mon profil</div>
+  <div class="tabs-profil px-3">
+    <div class="mb-4 border-b border-white dark:border-gray-700">
+      <ul class="flex flex-wrap -mb-px text-sm text-gray-700 font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" >
+        <li class="me-2" role="presentation">
+          <button class="inline-block p-3 rounded" [ngClass]="{'tab-selected': activeTab === 'infos'}" (click)="changeTab('infos')" [attr.aria-selected]="activeTab === 'infos' ? true : false" type="button" role="tab" aria-controls="infos">Informations personnelles</button>
+        </li>
+        <li class="me-2" role="presentation">
+          <button class="inline-block p-3 rounded" [ngClass]="{'tab-selected': activeTab === 'profil'}" (click)="changeTab('profil')" [attr.aria-selected]="activeTab === 'profil' ? true : false" type="button" role="tab" aria-controls="profil">Profil</button>
+        </li>
+        <li class="me-2" role="presentation">
+          <button class="inline-block p-3 rounded text-gray-500" [ngClass]="{'tab-selected': activeTab === 'password'}" (click)="changeTab('password')" [attr.aria-selected]="activeTab === 'password' ? true : false" type="button" role="tab" aria-controls="password">Mot de passe</button>
+        </li>
+      </ul>
+    </div>
+    <div id="default-tab-content">
+      <div [ngClass]="{'hidden': activeTab !== 'infos'}" class="p-4 rounded-lg bg-white dark:bg-gray-800" id="infos" role="tabpanel" aria-labelledby="infos-tab">
+        <app-form-profil></app-form-profil>
+      </div>
+      <div [ngClass]="{'hidden': activeTab !== 'profil'}" class="p-4 rounded-lg bg-white dark:bg-gray-800" id="profil" role="tabpanel" aria-labelledby="profil-tab">
+        <app-edit-profil></app-edit-profil>
+      </div>
+      <div [ngClass]="{'hidden': activeTab !== 'password'}" class="p-4 rounded-lg bg-white dark:bg-gray-800" id="password" role="tabpanel" aria-labelledby="password-tab">
+      <app-edit-password></app-edit-password>
+      </div>
+    </div>
+  </div>
+</div>

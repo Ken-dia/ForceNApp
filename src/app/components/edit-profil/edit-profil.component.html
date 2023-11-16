@@ -1,0 +1,111 @@
+<div class="form lg:w-2/3">
+  <div class="lg:flex justify-between mb-6">
+    <div class="mb-6">
+      <div class="font-bold">Information personnelle</div>
+      <div class="text-sm">
+        Mettez à jour votre photo et vos coordonnées personnelles ici.
+      </div>
+    </div>
+    <div>
+      <div class="lg:flex justify-end">
+        <div class="">
+          <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Annuler</button>
+          <button type="button" class="text-white btn-login focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+  <div class="grid lg:grid-cols-3 gap-6 my-6">
+    <div class="text-sm">
+      Votre photo, elle s'affiche sur votre profil
+
+    </div>
+    <div class="col-span-2">
+        <div class="flex gap-6">
+          <img class="w-20 h-20 rounded-full" src="https://media.licdn.com/dms/image/C4D03AQFxZIdYOoApQA/profile-displayphoto-shrink_100_100/0/1641287761613?e=1705536000&v=beta&t=w9p4JZPyZ7gpksz-FaKsKcAxSRta8dWTMg0CfckzVF4" alt="Rounded avatar">
+          <div class="shadow-sm border border-b-gray-200 w-full p-8 rounded-lg grid justify-center">
+            <div class="flex justify-center">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 19">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15h.01M4 12H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3m-5.5 0V1.07M5.5 5l4-4 4 4"/>
+              </svg>
+            </div>
+
+            <div class="mt-6">
+             <button class=" text-blue-900" type="button">Télécharger</button> <span class="text-gray-600"> ou glissez-déposer </span>
+             <div class="text-sm text-gray-700">SVG, PNG, JPEG, GIF(max 800*400px)</div>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+  </div>
+  <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+  <div class="grid lg:grid-cols-3 gap-6 my-6">
+    <div class="text-sm">
+      <div>A mon sujet</div>
+      <div class="text-gray-700">Ecrire une petite description</div>
+    </div>
+    <div class="col-span-2">
+      <div class="flex justify-between mb-6">
+        <div class="w-1/2">
+          <select id="countries" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Régular</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+          </select>
+        </div>
+        <div class="flex justify-end gap-6">
+          <div class="icon mt-1">
+            <svg class="w-4 h-4 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 16">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 1h4.5a3.5 3.5 0 1 1 0 7H3m0-7v7m0-7H1m2 7h6.5a3.5 3.5 0 1 1 0 7H3m0-7v7m0 0H1"/>
+            </svg>
+          </div>
+
+          <div class="icon mt-1">
+            <svg class="w-4 h-4 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 16">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3.874 15 6.143-14M1 15h6.33M6.67 1H13"/>
+            </svg>
+          </div>
+          <div class="icon mt-1">
+            <svg class="w-4 h-4 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" d="M1 1h12M8 5h5M8 9h5M1 13h12M1 5v4l3-2-3-2Z"/>
+            </svg>
+
+          </div>
+          <div class="icon mt-1">
+            <svg class="w-4 h-4 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 1h8M1 5h12M3 9h8M1 13h12"/>
+            </svg>
+          </div>
+          <div class="icon">
+            <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="1.9" d="M6 1h10M6 5h10M6 9h10M1.49 1h.01m-.01 4h.01m-.01 4h.01"/>
+            </svg>
+          </div>
+          <div class="icon">
+            <svg class="w-6 h-6 text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 18">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" d="M9.5 3h9.563M9.5 9h9.563M9.5 15h9.563M1.5 13a2 2 0 1 1 3.321 1.5L1.5 17h5m-5-15 2-1v6m-2 0h4"/>
+            </svg>
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+      <p class="ms-auto text-sm text-gray-500 dark:text-gray-400"> 275 caracters left </p>
+    </div>
+  </div>
+  <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700">
+  <div class="flex justify-end">
+    <div class="">
+      <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Annuler</button>
+      <button type="button" class="text-white btn-login focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Enregistrer</button>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+// import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-abdoulaye',
@@ -7,11 +8,15 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./abdoulaye.component.css']
 })
 export class AbdoulayeComponent {
-  constructor(private sanitizer: DomSanitizer) {}
-
-  sanitizeHtml(html: string): SafeHtml {
-    return this.sanitizer.bypassSecurityTrustHtml(html);
+  ngOnInit(): void {
+    initFlowbite();
   }
+
+  // constructor(private sanitizer: DomSanitizer) {}
+
+  // sanitizeHtml(html: string): SafeHtml {
+  //   return this.sanitizer.bypassSecurityTrustHtml(html);
+  // }
 
 
 }
