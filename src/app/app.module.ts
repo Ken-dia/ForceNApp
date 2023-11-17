@@ -6,15 +6,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CardFormComponent } from './components/card-form/card-form.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';@NgModule({
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+@NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     CardFormComponent,
     NotFoundComponent,
-
-
   ],
   imports: [
     BrowserModule,
