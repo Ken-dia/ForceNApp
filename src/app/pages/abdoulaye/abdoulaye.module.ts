@@ -10,6 +10,10 @@ import { ProfilComponent } from './profil/profil.component';
 import { AbdoulayeRoutingModule } from './abdoulaye-routing.module';
 import { AbdoulayeComponent } from './abdoulaye.component';
 import { ELearningComponent } from './e-learning/e-learning.component';
+import { FormProfilComponent } from 'src/app/components/form-profil/form-profil.component';
+import { EditProfilComponent } from 'src/app/components/edit-profil/edit-profil.component';
+import { EditPasswordComponent } from 'src/app/components/edit-password/edit-password.component';
+import { SoumissionTableComponent } from 'src/app/components/soumission-table/soumission-table.component';
 
 
 @NgModule({
@@ -23,6 +27,12 @@ import { ELearningComponent } from './e-learning/e-learning.component';
     SoumissionsComponent,
     ProfilComponent,
     ELearningComponent,
+    FormProfilComponent,
+    EditProfilComponent,
+    EditPasswordComponent,
+    SoumissionTableComponent,
+
+
   ],
   imports: [CommonModule,AbdoulayeRoutingModule]
 })
